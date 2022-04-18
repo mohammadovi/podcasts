@@ -33,14 +33,11 @@
                     <div class="card rounded-3 text-black gradient-custom-2">
                         <div class="row g-0 ">
                             <div class="col-lg-6">
-                                <div class="card-body p-md-5 mx-md-4 ">
-
+                                <div class="card-body  ">
                                     <div class="text-center ">
                                         <img src="/main/assets/logo/img/namlog.png" style="width: 185px;" alt="logo">
-
-
                                     </div>
-<br>
+                                    <br>
                                     <form method="POST" action="{{ route('login') }}">
                                         @csrf
                                         <div class="form-outline mb-4">
@@ -78,7 +75,7 @@
                                         </div>
 
                                         <div class="text-center pt-1 mb-5 pb-1">
-                                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2  mb-3" >
+                                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2  " >
                                                 ورود</button>
                                             @if (Route::has('password.request'))
                                                 <a class="btn btn-link " href="{{ route('password.request') }}">
@@ -94,6 +91,18 @@
 {{--                                        </div>--}}
 
                                     </form>
+                                    <div class="row">
+
+                                            <a href="{{route('auth.google')}}" class="btn btn-danger">
+                                                <i class="fa fa-google" ></i>
+                                                ورود با Google</a>
+
+
+                                            <a  href="#" class="btn btn-primary disabled">
+                                                <i class="fa fa-facebook-square" ></i>
+                                                ورود با  Facebook</a>
+
+                                    </div>
 
                                 </div>
                             </div>
