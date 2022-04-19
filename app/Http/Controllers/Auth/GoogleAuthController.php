@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class GoogleAuthController extends Controller
 {
@@ -29,7 +31,9 @@ class GoogleAuthController extends Controller
                 ]);
                 auth()->loginUsingId($newUser->id);
             }
+
             return redirect('/');
+
         }catch (\Exception $e){
             //Todo Show_Error_Massage
             return "مشکلی در ورود هست";

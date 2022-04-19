@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +17,10 @@ use Laravel\Socialite\Facades\Socialite;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
+
+
 });
 
 Auth::routes();
