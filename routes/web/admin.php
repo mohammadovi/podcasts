@@ -1,9 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    toast('به بخش مدیریت خوش آمدید','info');
-
-    return 'welcome';
+    return view('admin.index');
 });
 Route::get('users', function () {
     return 'users list';
