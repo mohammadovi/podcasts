@@ -14,6 +14,7 @@ class Podcast extends Model
         'price',
         'inventory',
         'view_count',
+        'image','audio'
 
     ];
 }

@@ -95,7 +95,7 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer rtl justify-content-center" >
-                    {!! $users->links('pagination::bootstrap-5') !!}
+                    {!! $users->appends(['search'=>request('search')])->links('pagination::bootstrap-5') !!}
 
                 </div>
             </div>

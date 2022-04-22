@@ -67,6 +67,41 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item has-treeview {{isActive(['admin.podcasts.index' ,'admin.podcasts.create' ,'admin.podcasts.edit'] , 'menu-open')}}">
+                            <a href="#" class="nav-link  {{isActive(['admin.podcasts.index' ,'admin.podcasts.create' ,'admin.podcasts.edit'] , 'active')}}">
+                                <i class="nav-icon fab fa-napster"></i>
+                                <p>
+                                    مدیریت پادکست ها
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('admin.podcasts.index')}}" class="nav-link {{isActive(['admin.podcasts.index'  ,'admin.podcasts.edit'] , 'active')}}">
+                                        <i class="fas fa-book nav-icon"></i>
+                                        <p> _نمایش  پادکست ها  </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('admin.podcasts.create')}}" class="nav-link {{isActive(['admin.podcasts.create'] , 'active')}}">
+                                        <i class="fas fa-book-medical nav-icon" ></i>
+                                        <p>پادکست  جدید  </p>
+
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('admin.users.create')}}" class="nav-link {{isActive(['admin.users.create'] , 'active')}}">
+                                        <i class="fas fa-user-plus nav-icon fa-spin fa-3x" ></i>
+                                        <p>پادکست  ها تایید نشده  </p>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
 
                     </ul>

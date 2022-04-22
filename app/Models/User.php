@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->is_staff;
     }
+
+    public function podcasts()
+    {
+        return $this->hasMany(Podcast::class);
+    }
 }

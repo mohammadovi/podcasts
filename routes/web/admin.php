@@ -9,6 +9,6 @@ Route::get('/', function () {
 
 Route::resource('users','UserController');
 
-Route::resource('podcasts','PodcastController');
+Route::resource('podcasts','PodcastController')->except([ 'show']);
 
 

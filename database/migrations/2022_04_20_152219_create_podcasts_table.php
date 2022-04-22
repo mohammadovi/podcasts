@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text('description');
             $table->integer('price');
             $table->integer('inventory')->default(0);
+            $table->integer('audio')->nullable();
+            $table->integer('image')->nullable();
             $table->integer('view_count')->default(0);
             $table->timestamps();
         });
