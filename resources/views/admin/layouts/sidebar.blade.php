@@ -15,8 +15,8 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
+                        <li class="nav-item has-treeview {{isActive(['admin.'],'menu-open')}}">
+                            <a href="{{route('admin.')}}" class="nav-link {{isActive('admin.')}} ">
                                 <i class="nav-icon fa fa-dashboard"></i>
                                 <p>
                                     داشبوردها
@@ -25,17 +25,44 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link active">
-                                        <i class="fa fa-circle-o nav-icon"></i>
-                                        <p>داشبورد </p>
+                                    <a href="{{route('admin.')}}" class="nav-link {{isActive('admin.')}}">
+                                        <i class="fa fa-briefcase nav-icon"></i>
+                                        <p> پنل مدیریت </p>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="/admin/podcasts" class="nav-link active">
+                                    <a href="" class="nav-link ">
                                         <i class="fa fa-circle-o nav-icon"></i>
                                         <p>پادکست ها </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-treeview {{isActive(['admin.users.index' ,'admin.users.create' ,'admin.users.edit'] , 'menu-open')}}">
+                            <a href="#" class="nav-link  {{isActive(['admin.users.index' ,'admin.users.create' ,'admin.users.edit'] , 'active')}}">
+                                <i class="nav-icon fas fa-user-cog "></i>
+                                <p>
+                                    مدیریت کاربران
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('admin.users.index')}}" class="nav-link {{isActive(['admin.users.index'  ,'admin.users.edit'] , 'active')}}">
+                                        <i class="fa fa-users nav-icon"></i>
+                                        <p> نمایش  کاربران </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="{{route('admin.users.create')}}" class="nav-link {{isActive(['admin.users.create'] , 'active')}}">
+                                        <i class="fas fa-user-plus nav-icon fa-spin fa-3x" ></i>
+                                        <p>ساخت کاربر جدید  </p>
+
                                     </a>
                                 </li>
                             </ul>

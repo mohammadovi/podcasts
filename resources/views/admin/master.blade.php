@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/plugins/font-awesome/css/font-awesome.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
 
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -87,7 +89,7 @@ to get the desired effect
 <script src="{{ asset('/js/admin.js') }}" ></script>
 
 <script src="plugins/chart.js/Chart.min.js"></script>
-
+@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 </body>
 
 </html>

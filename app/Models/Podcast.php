@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Podcast extends Model
 {
-    use HasFactory;
+    protected $fillable =[
+        'user_id',
+        'title',
+        'description',
+        'price',
+        'inventory',
+        'view_count',
+
+    ];
 }

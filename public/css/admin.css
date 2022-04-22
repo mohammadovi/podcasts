@@ -4,6 +4,7 @@
  *	 Website: AdminLTE.io <http://adminlte.io>
  *   License: Open source - MIT <http://opensource.org/licenses/MIT>
  */
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -13352,4 +13353,16 @@ ul {
     font-family: 'Vazir', sans-serif;
 }
 
+.table-hover tbody tr:hover > td {
+  background-color: #ff8000;
+  color: #210000;
+  font-weight: bolder;
+}
 
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
