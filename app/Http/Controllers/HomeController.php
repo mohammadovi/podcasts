@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Podcast;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -30,4 +31,5 @@ class HomeController extends Controller
 
         return view('home');
     }
+
 }

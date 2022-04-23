@@ -16,12 +16,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 |
 */
 
-Route::get('/', function () {
-
-    return view('welcome');
-
-
-});
+Route::get('/', [App\Http\Controllers\SiteController::class, 'mainPage'])->name('mp');
 
 Auth::routes(['verify' => true]);
 
@@ -29,4 +24,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Google Account Login/Register
 Route::get('/auth/google','App\Http\Controllers\Auth\GoogleAuthController@redirect')->name('auth.google');
 Route::get('/auth/google/callback','App\Http\Controllers\Auth\GoogleAuthController@callback');
-
+//Show_Podcasts_onPageWebSite..
+Route::get('podcasts','App\Http\Controllers\PodcastController@index')->name('podcastMain');
+Route::get('podcast/{podcast}','App\Http\Controllers\PodcastController@single')->name('podcastSingle');
