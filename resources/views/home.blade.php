@@ -25,6 +25,7 @@
                         </div>
                         <div class="row d-flex justify-content-center">
                             {{ __('شما وارد سایت شدید!!') }}
+
                         </div>
 
                 </div>

@@ -37,7 +37,7 @@
                             <th> توضیحات پادکست</th>
                             <th>عملیات</th>
                         </tr>
-                            @foreach($podcasts as $podcast)
+                            @foreach($podcasts as $podcast )
                                 <tr>
                                     <td  class="w-25">
                                         <audio controls>
@@ -49,7 +49,11 @@
                                     <td  class="w-25"><img class="w-25 img-fluid"  src="{{$podcast->image}}" alt="لینک عکس دچار مشکل   شده است"> </td>
                                     <td>{{$podcast->id}}</td>
                                     <td>{{$podcast->title}}</td>
-                                    <td>{{$podcast->description}}</td>
+                                    <td>
+                                        {{Str::limit($podcast->description, 15, ' ...') }}
+                                    </td>
+
+
                                     <td class="d-flex">
                                         <form action="{{route('admin.podcasts.destroy',$podcast->id)}}" method="POST">
                                             @csrf

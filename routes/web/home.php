@@ -25,5 +25,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/auth/google','App\Http\Controllers\Auth\GoogleAuthController@redirect')->name('auth.google');
 Route::get('/auth/google/callback','App\Http\Controllers\Auth\GoogleAuthController@callback');
 //Show_Podcasts_onPageWebSite..
-Route::get('podcasts','App\Http\Controllers\PodcastController@index')->name('podcastMain');
+Route::get('podcast','App\Http\Controllers\PodcastController@index')->name('podcastMain');
 Route::get('podcast/{podcast}','App\Http\Controllers\PodcastController@single')->name('podcastSingle');

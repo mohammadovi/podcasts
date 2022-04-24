@@ -30,7 +30,7 @@
             <div class="card bg-light text-dark  shadow-orange2
             border-rad-bottom" style="width:18rem;">
                 <div class="card-body">
-                    <p class="card-text">پادکست ها ها </p>
+                    <p class="card-text">پادکست ها  </p>
                 </div>
                 <div class="card-body">
                     <div class="owl-carousel owl-theme full-width">
@@ -103,11 +103,14 @@
                     <hr style="height:5px">
                     <h4 class="card-title">توضیحات</h4>
                     <p class="card-text">
-                        {{$podcast -> text}}
-                        {{$podcast -> price}}
+
+                        {{$podcast->description}}
+                    <p class="badge bg-info">انتشار در 1399</p>
                     </p>
                     <hr style="height:5px">
+                    <a href="" style=" color: inherit;" class="badge bg-secondary"> mohandesi </a>
 
+                    <hr style="height:5px">
                     <div class="card-body">
                         <h4 class="card-title">اپیزود های مرتبط</h4>
                         <div class="owl-carousel owl-theme loop">

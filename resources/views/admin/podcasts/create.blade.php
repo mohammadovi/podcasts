@@ -13,7 +13,7 @@
                </div>
                <!-- /.card-header -->
                <!-- form start -->
-               <form class="form-horizontal" action="{{route('admin.podcasts.store')}}" method="POST" >
+               <form class="form-horizontal" action="{{route('admin.podcasts.store')}}" method="POST" enctype="multipart/form-data" >
                    @CSRF
                    <div class="card-body">
                        <div class="form-group">
@@ -31,7 +31,14 @@
                                <input type="hidden" name="inventory" class="form-control" id="inputInventory" value="0">
                        </div>
 
-
+                       <div class="form-group">
+                           <label for="image" class=" control-label">آپلود تصویر</label>
+                           <input type="file" name="image" class="form-control" >
+                       </div>
+                       <div class="form-group">
+                           <label for="audio" class=" control-label">آپلود پادکست</label>
+                           <input type="file" name="audio" class="form-control" >
+                       </div>
                    </div>
                    <!-- /.card-body -->
                    <div class="card-footer">

@@ -9,6 +9,14 @@
     audio::-webkit-media-controls-time-remaining-display {
         display: none;
     }
+
+     .card-columns{
+
+         column-count: 3;
+
+
+     }
+
 </style>
 </head>
 

@@ -22,10 +22,10 @@
                             data-bs-target="#nav-profile" type="button" role="tab"
                             aria-controls="nav-profile"
                             aria-selected="false">پادکست های قدیمی</button>
-{{--                    <button class="nav-link alink" id="nav-contact-tab" data-bs-toggle="tab"--}}
-{{--                            data-bs-target="#nav-contact" type="button" role="tab"--}}
-{{--                            aria-controls="nav-contact"--}}
-{{--                            aria-selected="false">پادکست ها</button>--}}
+                    <button class="nav-link alink" id="nav-contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact" type="button" role="tab"
+                            aria-controls="nav-contact"
+                            aria-selected="false">پادکست ها</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -34,12 +34,11 @@
                         <div class="row spish ">
                             @foreach($podcasts as $key=>$podcast)
                                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 container-fluid" style="margin:0 auto 0">
-                                    <div class="card psize border-rad-top noneradius1 "style=" margin-right:auto;margin-left:auto; ">
-                                        {{--     @if($key%2 ==0) bg-secondary @else--}}
-                                        {{--         bg-light @endif--}}
-                                        <a href="podcast/{{$podcast->id}}">
-                                            <img src="{{$podcast->image}}" class="card-img-top" alt="...">
-                                        </a>
+                                    <div class="card psize border-rad-top noneradius1 " style=" margin-right:auto;margin-left:auto; ">
+                                            <a href="podcast/{{$podcast->id}}">
+{{--                                                <img src="/podcasts/images/MohammadAhmadi2022/4/1_پادکست-ها.jpg" class="card-img-top" alt="...">--}}
+                                                <img src="{{$podcast->image}}" class="card-img-top" alt="...">
+                                            </a>
                                         <div class="card-body @if($key% 2 ==0) bg-light text-dark @else bg-dark text-light @endif ">
                                             <h5 class="card-title">{{$podcast->title}}</h5>
                                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -62,15 +61,16 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
                     <div class="container-fluid mx-auto mb-4 col-12">
                         <div class="row spish ">
                             @foreach($podcastsF as $key=>$podcast)
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-4 container-fluid" style="margin:0 auto 0">
+                                <div class="col-12 col-sm-6 col-md-4  col-lg-4 container-fluid" style="margin:0 auto 0;">
                                     <div class="card psize border-rad-top noneradius1 "style=" margin-right:auto;margin-left:auto; ">
                                         {{--     @if($key%2 ==0) bg-secondary @else--}}
                                         {{--         bg-light @endif--}}
-                                        <a href="podcast/{{$podcast->id}}">
-                                            <img src="{{$podcast->image}}" class="card-img-top" alt="...">
+                                        <a  href="podcast/{{$podcast->id}}">
+                                            <img  src="{{$podcast->image}}" class="card-img-top" alt="...">
                                         </a>
                                         <div class="card-body @if($key% 2 ==0) bg-light text-dark @else bg-dark text-light @endif ">
                                             <h5 class="card-title">{{$podcast->title}}</h5>
@@ -93,6 +93,8 @@
                         </div>
                     </div>
                 </div>
+
+
 {{--                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">--}}
 
 {{--                </div>--}}
