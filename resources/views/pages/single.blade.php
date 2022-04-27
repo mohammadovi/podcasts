@@ -75,41 +75,27 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-
-        <div class="container col-md-7 shadow-white " style="margin-bottom:
-        15px;"  >
-
+        <div class="container col-md-7 shadow-white " style="margin-bottom:15px;"  >
             <div class="card d-flex justify-content-center">
                 <div class="card-header ">
                     {{$podcast -> title}}
                 </div>
-                <div class="card col-md-12 shadow-white border-rad-top mrl "
-                     style="width:
+                <div class="card col-md-12 shadow-white border-rad-top mrl " style="width:
                 18rem;">
-                    <img src="{{$podcast->image}}" class="card-img-top" alt=".
-                    ..">
-
+                    <img src="{{$podcast->image}}" class="card-img-top" alt="...">
                 </div>
-
                 <div class="card-body">
-
-
                         @include('layouts.playersingle')
-
                     <hr style="height:5px">
                     <h4 class="card-title">توضیحات</h4>
                     <p class="card-text">
-
                         {{$podcast->description}}
                     <p class="badge bg-info">انتشار در 1399</p>
                     </p>
                     <hr style="height:5px">
                     <a href="" style=" color: inherit;" class="badge bg-secondary"> mohandesi </a>
-
                     <hr style="height:5px">
                     <div class="card-body">
                         <h4 class="card-title">اپیزود های مرتبط</h4>
@@ -152,11 +138,8 @@
                             role="tab" aria-controls="nav-home"
                             aria-selected="true">
                         <li class="fas fa-comments">
-
                               </li>نظرات کاربران
-
                     </button>
-
                     <button class="nav-link alink" id="nav-comments2-tab"
                             data-bs-toggle="tab"
                             data-bs-target="#nav-comments2" type="button"
@@ -165,20 +148,16 @@
                             aria-selected="false">
                         <li class="fas fa-commenting text-danger"> </li>
                         نظر بدهید
-
                     </button>
-
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent " >
-
                 <div class="tab-pane text-secondary fade text-start show active"
                      id="nav-comments"
                      role="tabpanel" aria-labelledby="nav-comments">
                         <article>
                             <h2 class="param-title">
                                 نظرات کاربران
-{{--                                <span>۱۲۳ نظر</span>--}}
                             </h2>
                             <div class="comments-area default">
                                 <ol class="comment-list">
@@ -193,11 +172,7 @@
 {{--                                            <div class="commentmetadata">--}}
 {{--                                                {{$comment->created_at}}--}}
 {{--                                            </div>--}}
-
-
-
 {{--                                            <p>{{$comment->text}}</p>--}}
-
 {{--                                            <div class="reply"><a class="comment-reply-link" href="#">پاسخ</a></div>--}}
 {{--                                        </div>--}}
 {{--                                    </li>--}}

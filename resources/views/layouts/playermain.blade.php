@@ -9,11 +9,11 @@
                     </div>
 {{--                    <span id="durTime"></span>--}}
                 </div>
-                <audio src="public/images/Maid with the Flaxen Hair.mp3" id="audio"></audio>
+                <audio src="{{$lastPodcast->audio}}" id="audio"></audio>
 
 
                 <div  class="img-container position-relative">
-                    <img src="/main/assets/img/posterepisod/1.jpg" alt="cover-music" id="cover">
+                    <img src="{{$lastPodcast->image}}" class="bg-dark img-fluid" alt="cover-music" id="cover">
 
                 </div>
                 <div class="navigation d-flex align-items-center

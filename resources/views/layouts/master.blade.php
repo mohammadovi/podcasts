@@ -15,7 +15,7 @@
         @include('layouts.player')
     </section><!--End#hero-->
 
-
+        @include('layouts.about')
     <!-- Start episods Section -->
     <section id="episods" class="episods ">
         <div class="container-fluid">
@@ -25,7 +25,7 @@
     <!-- End episods Section -->
 
 
-    @include('layouts.about')
+
 
 {{--     @include('layouts.teams')--}}
 

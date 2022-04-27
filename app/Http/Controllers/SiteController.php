@@ -13,7 +13,7 @@ class SiteController extends Controller
 //        toast('خوش آمدید به رادیو نمانا!','success');
 
         $podcasts = Podcast::latest('updated_at')->take(5)->get();
-        $lastPodcast = Podcast::latest('updated_at')->first();
+        $lastPodcast =Podcast::find(2);
         //item sdsad
 //        $pr = Podcast::whereHas('categories', function ($query) {
 //            return $query->where('id', '=', 2);
