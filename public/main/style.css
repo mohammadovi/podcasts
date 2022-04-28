@@ -15,7 +15,7 @@ body{
     margin:0 auto 0;
     direction: rtl;
     background-color: rgba(17, 17, 17, 0.96);
-    font-family:iranyekan !important;
+    font-family:iranyekan ;
 
 
 }
@@ -39,7 +39,7 @@ img{
 }
 h1, h2, h3, h4, h5, h6
  {
-    font-family:iranyekan !important;
+    font-family:iranyekan ;
 }
 .ored{
     color:orangered;

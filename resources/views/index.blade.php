@@ -4,7 +4,7 @@
 
     <!--Last Podcast-->
     <div class="row justify-content-center " >
-        <h2 class="col-4 ">آخرین پادکست های منتشر شده </h2>
+        <h2 class="col-4 " style="font-family:biranyekan!important">آخرین پادکست های منتشر شده </h2>
         <div class="col-12 box-margin " >
             <div class="card " style="border-radius: 25px;box-shadow: 0 5px 8px 6px rgb(126,126,126);">
                 <div class="card-body text-light">
@@ -37,7 +37,7 @@
     <div class="row justify-content-center">
 
         <div class="col-12 box-margin">
-            <h2 class="col-4 ">اولین پادکست های منتشر شده </h2>
+            <h2 class="col-4 " style="font-family:biranyekan!important">اولین پادکست های منتشر شده </h2>
             <div class="card bg-dark" style="border-radius: 25px;box-shadow:0 5px 8px 6px rgb(126,126,126);">
                 <div class="card-body">
                     <div class="owl-carousel owl-theme loop">

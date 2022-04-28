@@ -2,9 +2,9 @@
 <div class="hero-container ltr d-flex justify-content-end   ">
     <div class="player container-fluid ">
         <div class="d-flex justify-content-center">
-            <h2 class="col-8 col-md-5 col-lg-4  mt-5" >
+            <h2 class="col-8 col-md-5 col-lg-4  mt-5" style="font-family:biranyekan!important" >
                 خوش آمدید به
-                <strong>رادیو نمانا</strong>
+                <br>  <strong class="ored">رادیو نمانا</strong>
             </h2>
         </div>
 
