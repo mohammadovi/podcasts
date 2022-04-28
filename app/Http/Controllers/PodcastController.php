@@ -16,7 +16,8 @@ class PodcastController extends Controller
     }
     public function single(Podcast $podcast)
     {
-        $podcasts = Podcast::all();
+        $podcasts = Podcast::latest()->paginate(100);
         return view('pages.single',compact('podcast','podcasts'));
     }
+
 }

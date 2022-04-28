@@ -7,13 +7,9 @@
     @include('layouts.preloader')
     @include('layouts.navtop')
 
-    <div class="row container-fluid noneradius1 text-center" style="margin-top:
-    99px ;
-    margin-right: 5px;" >
+    <div class="row container-fluid noneradius1 text-center" style="margin-top:99px ;margin-right: 5px;" >
         <div class="container-fluid col-md-4 "  >
-            <div class="card bg-light text-dark shadow-orange2 border-rad-top"
-                 style="width:
-            18rem;">
+            <div class="card bg-light text-dark shadow-orange2 border-rad-top" style="width: 18rem;">
                 <img src="/main/assets/img/baner/panelSqure.jpg" class="card-img-top" alt="...">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" style="font-family:iranyekan" >1-وارد پروفایل خود بشوید</li>
@@ -34,11 +30,7 @@
                 </div>
                 <div class="card-body">
                     <div class="owl-carousel owl-theme full-width">
-                          @foreach($podcasts as $podcast)
-                            <div class="item">
-                                <img src="{{$podcast->image}}" alt=" پادکست {{$podcast->title}} مشکلی دارد">
-                            </div>
-                            @endforeach
+                            @include('layouts.slidePod')
                     </div>
                 </div>
             </div>
