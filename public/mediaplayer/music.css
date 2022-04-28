@@ -5,7 +5,7 @@
 
 .music-container{
     border-radius: 15px;
-    box-shadow: 0 0 10px 5px rgb(252, 158, 0);
+    box-shadow: 0 0 10px 5px rgb(197, 204, 204);
     padding:0;
     margin: 100px 0 0 0;
     z-index: 10;
@@ -16,11 +16,13 @@
 
 }
 .img-container{
+    box-shadow: 0 0 10px 5px rgb(91, 90, 90);
     width:110px;
 }
 .img-container::after{
+    box-shadow: 0 0 10px 5px rgb(91, 90, 90);
     content:'';
-    background-color: orangered;
+    background-color: #313131;
     border-radius: 50%;
     position: absolute;
     bottom:100%;
@@ -30,6 +32,10 @@
     transform: translate(-50%,50%);
 
 }
+@media only screen and (max-width: 400px) {
+    .img-container::after {
+        display:none;
+    } }
 
 
 .img-container img{

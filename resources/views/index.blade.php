@@ -43,9 +43,9 @@
                     <div class="owl-carousel owl-theme loop">
                         @foreach($podcasts as $podcast)
                             <div class="item">
+                                {{$podcast->title}}
                                 <a href="podcast/{{$podcast->id}}">
                                     <img class="img-fluid" src="{{$podcast->image}}">
-
                                 </a>
 
                             </div>

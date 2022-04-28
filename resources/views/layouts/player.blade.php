@@ -2,8 +2,10 @@
 <div class="hero-container ltr d-flex justify-content-end   ">
     <div class="player container-fluid ">
         <div class="d-flex justify-content-center">
-            <h3 class="col-8 col-md-5 col-lg-4 bg-darkb mt-5" >خوش آمدید به
-                <strong>رادیو نمانا</strong></h3>
+            <h2 class="col-8 col-md-5 col-lg-4  mt-5" >
+                خوش آمدید به
+                <strong>رادیو نمانا</strong>
+            </h2>
         </div>
 
             <!-- Define the section for displaying details -->

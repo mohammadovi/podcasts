@@ -773,7 +773,7 @@ input[type=range]::-ms-thumb {
 /*SeCtion-Podcasts*/
 #headertop {
     width:inherit;
-    height: 48vh;
+    height: 80vh;
     position: relative;
     background: url('/main/assets/img/baner/podcasts.jpg') top center;
     background-repeat: no-repeat;

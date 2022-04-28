@@ -3,3 +3,4 @@
         <img src="{{$podcast->image}}" alt=" پادکست {{$podcast->title}} مشکلی دارد">
     </div>
 @endforeach
+
