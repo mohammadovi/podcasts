@@ -1068,3 +1068,28 @@ input[type=range]::-ms-thumb {
     color: #a7a7a7;
 }
 /* End Comment Reply */
+.animeText {
+     color: #000000;
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+
+@keyframes text {
+    from {color: #000000;left:-30%;}
+    to {color: orangered;left:30%;}
+}
+.animeText2 {
+    color: orangered;
+    animation-name: text2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes text2 {
+    from {color: orangered;}
+    to {color: #000000;}
+}

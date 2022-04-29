@@ -1,11 +1,19 @@
 
 <div class="hero-container ltr d-flex justify-content-end   ">
     <div class="player container-fluid ">
-        <div class="d-flex justify-content-center">
-            <h2 class="col-8 col-md-5 col-lg-4  mt-5" style="font-family:biranyekan!important" >
-                خوش آمدید به
-                <br>  <strong class="ored">رادیو نمانا</strong>
+        <div class="d-flex justify-content-center row">
+
+            <h2 class="col-12 col-md-5 col-lg-4 animeText  mt-5" style="font-family:biranyekan!important;font-size:25pt;" >
+                Welcome To
+                <br>  <strong class="animeText2">Namanayineshim</strong>
+                <br>
             </h2>
+            <h2 class="col-12 col-md-5 col-lg-4 animeText mt-5" style="font-family:biranyekan!important;font-size:25pt;" >
+                خوش آمدید به
+                <br>  <strong class="animeText2">نمانایی نشیم</strong>
+                <br>
+            </h2>
+
         </div>
 
             <!-- Define the section for displaying details -->
