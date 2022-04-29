@@ -9,11 +9,11 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => "It's Over 9000!", // set false to total remove
-            'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'For those who helped create the Genki Dama', // set false to total remove
+            'title'        => " نمانایی نشیم", // set false to total remove
+            'titleBefore'  => 'Namana', // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
+            'description'  => 'رادیو صوتی و معماری ', // set false to total remove
             'separator'    => ' - ',
-            'keywords'     => [],
+            'keywords'     => ['نمانا','رادیو','نمانایی نشیم','رادیو معماری','ساختمان','namana','radio','سازه'],
             'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
@@ -36,11 +36,11 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
+            'title'       => 'رادیو نمانا ', // set false to total remove
+            'description' => 'رادیو معماری نمانا، به عنوان پادکست و رسانه ای عمومی در حوزه ی معماری و شهرسازی فعالیت خود را از بهمن ماه سال 1398 آغاز کرد. در طی این زمان به تولید محتوا با بیانی کلاژگونه پرداخت تا هنر مهرازی و شهرسازی را با هنرهای هفت گانه همراه ساخته و روایت ها و داستان های بزرگان در این حوزه را به ضبط و ثبت رساند. این همراهی کارکردی میان معماری، شهرسازی و هنرهای هفتگانه؛ اندیشه و تجربه ای نو خلق کرده و با ادبیات و کلام، گوش نیوشی موثر در حفظ میراث فرهنگی کشور انتشار می دهد. چراکه بقول فروغ “تنها صداست که می ماند.', // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => false,
-            'site_name'   => false,
+            'site_name'   => 'namanayneshim',
             'images'      => [],
         ],
     ],
@@ -58,8 +58,8 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
+            'title'       => 'نمانا', // set false to total remove
+            'description' => 'رادیو معماری صوتی نمانا', // set false to total remove
             'url'         => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'WebPage',
             'images'      => [],

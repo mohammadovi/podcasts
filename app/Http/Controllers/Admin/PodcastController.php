@@ -18,6 +18,8 @@ class PodcastController extends Controller
      */
     public function index()
     {
+        $this->seo() ->setTitle('همه پادکست ها');
+
         $podcasts = Podcast::query();
 
         if ($keyword = request('search')){
@@ -37,6 +39,7 @@ class PodcastController extends Controller
      */
     public function create()
     {
+        $this->seo() ->setTitle(' ایجاد پادکست');
         return view('admin.podcasts.create');
     }
 
@@ -55,7 +58,9 @@ class PodcastController extends Controller
             'inventory' =>'required',
             'price' => 'required',
             'image' => 'required|image',
-            'audio' => 'required'
+            'audio' => 'required',
+            'metaTitle'=> 'nullable',
+            'metaDescription' => 'nullable'
         ]);
         $userIdP = auth()->user()->id;
         $userNameP = auth()->user()->name;
@@ -82,6 +87,7 @@ class PodcastController extends Controller
      */
     public function edit(Podcast $podcast)
     {
+        $this->seo() ->setTitle('ویرایش پادکست');
         return view('admin.podcasts.edit',compact('podcast'));
     }
 

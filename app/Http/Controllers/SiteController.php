@@ -11,6 +11,11 @@ class SiteController extends Controller
     {
         // example:
 //        toast('خوش آمدید به رادیو نمانا!','success');
+        $this->seo()
+            ->setTitle('صفحه اصلی')
+            ->setDescription('خوش آمدید به نمانایی نشیم')
+             ->opengraph()->setUrl('http://namanayneshim.ir');
+
 
         $podcasts = Podcast::latest('updated_at')->take(5)->get();
         $lastPodcast =Podcast::find(2);

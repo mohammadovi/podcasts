@@ -39,6 +39,15 @@
                            <label for="audio" class=" control-label">آپلود پادکست</label>
                            <input type="file" name="audio" class="form-control" >
                        </div>
+                       <div class="form-group">
+                           <label for="inputMeta">کلمات کلیدی پادکست  </label>
+                           <input type="text" class="form-control" id="inputMeta" name="metaTitle"  value="{{old('metaTitle')}}">
+                       </div>
+                       <div class="form-group">
+                           <label for="inputMetaD">توضیحات کلیدی پادکست </label>
+                           <input type="text" class="form-control" id="inputMetaD" name="metaDescription"  value="{{old('metaDescription')}}">
+                       </div>
+
                    </div>
                    <!-- /.card-body -->
                    <div class="card-footer">

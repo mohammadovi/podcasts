@@ -17,6 +17,7 @@ class UserController extends Controller
      */
     public function index()
     {
+        $this->seo() ->setTitle('نمایش  کاربران');
         $users = User::query();
         if ($keyword = request('search')){
             $users->where('email','LIKE',"%{$keyword}%")
@@ -37,7 +38,7 @@ class UserController extends Controller
      */
     public function create()
     {
-
+        $this->seo() ->setTitle('ساخت کاربر جدید');
         return view('admin.users.create');
     }
 
@@ -80,6 +81,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        $this->seo() ->setTitle('ویرایش کاربر');
         return view('admin.users.edit' ,compact('user'));
     }
 
