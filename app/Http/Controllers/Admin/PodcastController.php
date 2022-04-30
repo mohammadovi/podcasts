@@ -16,7 +16,10 @@ class PodcastController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-
+    public function __construct()
+    {
+        $this->middleware(['auth','verified']);
+    }
     public function index()
     {
         $this->seo() ->setTitle('همه پادکست ها');
