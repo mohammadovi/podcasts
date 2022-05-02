@@ -10,6 +10,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-left">
+                            @include('admin.layouts.errors')
                             {{ $breadcrumb }}
 
                         </ol>

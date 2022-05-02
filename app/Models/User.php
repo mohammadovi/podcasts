@@ -22,7 +22,9 @@ class User extends Authenticatable implements MustVerifyEmail
         'email',
         'password',
         'is_superuser',
-        'is_staff'
+        'is_staff',
+        'two_factor_type',
+        'phone_number'
     ];
 
     /**
@@ -43,6 +45,11 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function hasTwoFactor($key)
+    {
+      return  $this->two_factor_type == $key ;
+    }
     public function isSuperUser()
     {
         return $this->is_superuser;

@@ -38,7 +38,7 @@
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active col-md-8" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade  col-md-8" id="home" role="tabpanel" aria-labelledby="home-tab">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>نام کاربری </label>
@@ -80,20 +80,21 @@
                                                 </div>
                                             </div>
                             </div>
-                            <div class="tab-pane fade col-md-8" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade col-md-8 show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 @include('admin.layouts.errors')
-                                <form action="#" method="POST">
+                                <form action="{{route('manageTwoFactor')}}" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label for="type">وضعیت</label>
                                         <select name="type" id="type" class="form-control">
-                                            <option value="off">خاموش</option>
-                                            <option value="sms">پیامک</option>
+                                           @foreach(config('twoFactor.types') as $key => $name)
+                                                <option value="{{$key}}" {{old('type') == $key || auth()->user()->hasTwoFactor($key) ? 'selected' : ''}}>{{$name}}</option>
+                                               @endforeach
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="phone">شماره همراه</label>
-                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="لطفا شماره همراه خود را وارد نمایید./">
+                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="لطفا شماره همراه خود را وارد نمایید./" value="{{old('phone') ??auth()->user()->phone_number}}">
                                     </div>
                                     <div class="form-group">
                                         <button class="btn btn-outline-warning text-dark mt-1">ثبت</button>

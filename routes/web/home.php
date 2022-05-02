@@ -29,6 +29,9 @@ Route::get('/auth/google/callback','App\Http\Controllers\Auth\GoogleAuthControll
 Route::get('podcast','App\Http\Controllers\PodcastController@index')->name('podcastMain');
 Route::get('podcast/{podcast}','App\Http\Controllers\PodcastController@single')->name('podcastSingle');
 
-Route::get('profile' ,'App\Http\Controllers\ProfileController@index')->name('profile');
-Route::post('profile' ,'App\Http\Controllers\ProfileController@postManageTwoFactor');
+
 //->name('profile.2fa.manage')
+Route::middleware('auth')->group(function (){
+    Route::get('profile' ,'App\Http\Controllers\ProfileController@index')->name('profile');
+    Route::post('profile' ,'App\Http\Controllers\ProfileController@postManageTwoFactor')->name('manageTwoFactor');
+});
