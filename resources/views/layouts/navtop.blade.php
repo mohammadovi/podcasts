@@ -41,7 +41,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 @auth
                                     <li class="h-25">
-                                        <a class="dropdown-item" href="{{route('login') }}"> <p class="btn btn-outline-warning btn-sm h-25 container-fluid">{{auth()->user()->name}}</p> </a>
+                                        <a class="dropdown-item" href="{{route('profile') }}"> <p class="btn btn-outline-warning btn-sm h-25 container-fluid">{{auth()->user()->name}}</p> </a>
                                     </li>
                                     <li class="container-fluid mt-1">
                                        <form class="bg-dark" action="{{route('logout')}}" method="POST">
