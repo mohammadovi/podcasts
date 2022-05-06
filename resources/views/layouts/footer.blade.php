@@ -28,6 +28,6 @@
 <script src="{{asset('mediaplayer/playerapp.js')}}" type="text/javascript"></script>
 <script src="{{asset('main/mjs.js')}}" type="text/javascript"></script>
 
-
+@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
 

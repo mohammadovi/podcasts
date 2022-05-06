@@ -108,7 +108,7 @@ class UserController extends Controller
 
         $user->update($data);
         alert()->info('کاربر مورد نظر','با موفقیت ویرایش شد');
-        return back();
+        return redirect(route('admin.users.index'));
     }
 
     /**
