@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ActiveCode;
+use App\Notifications\ActiveCodeNoti;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -27,6 +28,8 @@ class ProfileController extends Controller
                 $request->session()->flash('phone',$data['phone']);
 
                 //Todo _SendToCode
+                $request->user()->notify(new ActiveCodeNoti($code,$data['phone']));
+
                 return redirect(route('profile.2fa.phone'));
             }else{
                 $request->user()->update([

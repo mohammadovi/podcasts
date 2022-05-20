@@ -5,11 +5,16 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Route;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('can:edit-user,user')->only(['edit']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -81,8 +86,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        $this->seo() ->setTitle('ویرایش کاربر');
-        return view('admin.users.edit' ,compact('user'));
+
+            $this->seo() ->setTitle('ویرایش کاربر');
+            return view('admin.users.edit' ,compact('user'));
+
     }
 
     /**

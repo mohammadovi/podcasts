@@ -35,4 +35,7 @@ return [
         'client_secret' => env('GOOGLE_SECRET_KEY'),
         'redirect' => env('GOOGLE_CALLBACK_URL'),
     ],
+    'kave'=>[
+        'key' => env('KAVE_API_KEY')
+    ]
 ];

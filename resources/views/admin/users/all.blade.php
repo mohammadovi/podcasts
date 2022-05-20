@@ -80,8 +80,9 @@
                                             @method('delete')
                                             <button type="submit" onclick="return confirm('آیا از حذف کاربر مطمن هستید؟')" class="btn btn-danger btn-sm fas fa-trash-alt   "></button>
                                         </form>
-
-                                        <a href="{{route('admin.users.edit', ['user'=>$user->id])}}" class="btn btn-outline-success  text-bold btn-sm mr-1 fas fa-edit "></a>
+                                        @can('edit-user',$user)
+                                          <a href="{{route('admin.users.edit', ['user'=>$user->id])}}" class="btn btn-outline-success  text-bold btn-sm mr-1 fas fa-edit "></a>
+                                       @endcan
                                         {{--                    <a href="{{route('users.role',['user'=>$user->id])}}" class="btn btn-success bi bi-briefcase-fill"></a>--}}
                                         {{--                    --}}
                                         {{--                    <a href="{{route('users.permission',['user'=>$user->id])}}" class="btn btn-success bi bi-gear"> </a>--}}
